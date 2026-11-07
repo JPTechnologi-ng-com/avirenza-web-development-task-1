@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Joseph Clement Adogbe | Web Developer Portfolio</title>
+  <meta name="description" content="Portfolio of Joseph Clement Adogbe, a second-year B.Tech student building clean, fast websites with HTML and CSS.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home">Joseph Adogbe</a>
+      <nav aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section id="home" class="hero">
+      <div class="container">
+        <h1>Joseph Clement Adogbe</h1>
+        <p class="headline">Second-year computer engineering student who builds clean, fast websites from scratch.</p>
+        <a class="button" href="#projects">See my projects</a>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container about-grid">
+        <img class="portrait" src="images/profile.jpg" width="600" height="600" alt="Joseph Clement Adogbe smiling, wearing a blue plaid shirt, standing outdoors in front of a cream and teal building">
+        <div>
+          <h2>About me</h2>
+          <p>I am a second-year B.Tech computer engineering student at Oduduwa University in Nigeria, and I am looking for an internship in web development. I like turning a plain idea into a page that loads quickly and is easy to read on any screen.</p>
+          <p>I write my own HTML and CSS instead of using page builders, because it teaches me exactly how the web works. I care about semantic structure, responsive layouts and accessibility, so that everyone can use what I build.</p>
+          <p>Outside of coding, I enjoy solving puzzles and helping classmates debug their projects.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="section section-alt">
+      <div class="container">
+        <h2>Education</h2>
+        <ol class="timeline">
+          <li class="timeline-item">
+            <h3>B.Tech in Computer Engineering</h3>
+            <p class="meta">Oduduwa University, 2025 to 2030 (expected)</p>
+            <p>Studying computer engineering, with coursework in programming, digital electronics, computer networks and web technologies.</p>
+          </li>
+          <li class="timeline-item">
+            <h3>Web Development Internship Programme</h3>
+            <p class="meta">AVIRENZA, 2026</p>
+            <p>Building real projects with semantic HTML5, CSS Grid, Flexbox and Git, and publishing them on GitHub Pages.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="container">
+        <h2>Skills</h2>
+        <div class="skills-groups">
+          <article class="skill-group">
+            <h3>Languages</h3>
+            <ul class="chips">
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>JavaScript</li>
+              <li>Python</li>
+              <li>C</li>
+              <li>SQL</li>
+            </ul>
+          </article>
+          <article class="skill-group">
+            <h3>Tools</h3>
+            <ul class="chips">
+              <li>Git and GitHub</li>
+              <li>VS Code</li>
+              <li>Chrome DevTools</li>
+              <li>Lighthouse</li>
+              <li>GitHub Pages</li>
+            </ul>
+          </article>
+          <article class="skill-group">
+            <h3>Soft skills</h3>
+            <ul class="chips">
+              <li>Clear communication</li>
+              <li>Teamwork</li>
+              <li>Problem solving</li>
+              <li>Time management</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section section-alt">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+          <article class="card">
+            <h3>BJ Football Academy</h3>
+            <p>A website for a football academy in Benin City, with a searchable squad roster that filters by position, a match-day gallery and a trials contact form.</p>
+            <p class="tech"><strong>Tech used:</strong> HTML, CSS, JavaScript</p>
+            <a class="card-link" href="https://jptechnologi-ng-com.github.io/BJ-FOOTBALL-ACADEMY/">View BJ Football Academy live site</a>
+          </article>
+          <article class="card">
+            <h3>Iron District Gym</h3>
+            <p>A three-page gym website with training programs, a BMR calculator and a membership page with plans and a payment form preview.</p>
+            <p class="tech"><strong>Tech used:</strong> HTML, CSS, JavaScript</p>
+            <a class="card-link" href="https://jptechnologi-ng-com.github.io/my-gym-site/">View Iron District Gym live site</a>
+          </article>
+          <article class="card">
+            <h3>buildUp Quiz App</h3>
+            <p>A quiz game with 8 categories, 3 difficulty levels, an optional countdown timer, answer review and a saved leaderboard.</p>
+            <p class="tech"><strong>Tech used:</strong> HTML, CSS, JavaScript</p>
+            <a class="card-link" href="https://jptechnologi-ng-com.github.io/Build-up/">View buildUp Quiz App live site</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container contact-wrap">
+        <h2>Contact</h2>
+        <p>Looking for an intern who writes careful, accessible code? Send me a message and I will reply as soon as I can.</p>
+        <form class="contact-form" action="#contact" method="post">
+          <div class="field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" autocomplete="email" required>
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button class="button" type="submit">Send message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; 2026 Joseph Clement Adogbe. Built with plain HTML and CSS.</p>
+      <ul class="footer-links">
+        <li><a href="https://github.com/JPTechnologi-ng-com">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/joseph-clement-284154449">LinkedIn</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>
